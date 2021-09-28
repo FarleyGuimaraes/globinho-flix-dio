@@ -1,0 +1,95 @@
+@media(min-width: 400px){
+    header .logo{
+        font-size: 40px;
+    }
+}
+
+@media(min-width:800px){
+    header nav .container-menu{
+        display: none;
+    }
+
+    header nav a:hover{
+        color: #fff;
+    }
+
+}
+
+@media(min-width:600px){
+    
+    .filme-principal .container{
+        width: 60%;
+        margin: 0;
+        padding-left: 30px;
+    }
+    
+    .filme-principal .container .titulo{
+        text-align: start;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+/*
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 70%;
+    }
+/*}
+*/
+/*
+@media screen and (max-width: 375px) {
+    
+    .logo{
+        height: 8vh;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+/*}
+*/
+
+/*HAMBURGER MENU*/
+@media(max-width: 800px){
+    nav .mainMenu {
+       /* height: 100vh;*/
+        position: fixed;
+        top: 0;
+        right: -100%;
+      /*  left: 0;*/
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: right 1s ease;
+        display: none;
+        margin-top: 7vh;
+    }
+        /*nav .container-menu {
+        display: block;
+    }*/
+    nav .mainMenu li a:hover {
+        background: none;
+        color: var(--vermelho);
+        font-size: 1.6rem;
+    }
+}
+
+/*
+@media (max-width: 991px){
+    .trailer{
+        max-width: 90%;
+    }
+}*/

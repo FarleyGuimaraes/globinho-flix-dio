@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--Responsivo-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+
+    <link href="./fonts/rede-globo-bold.ttf">
+
+    <link rel="stylesheet" href="style/burger.css">
+
+    <title>Globinho Flix</title>
+
+</head>
+
+<body onload="randomMainMovie();">
+    
+        <header>
+            <div class="container">
+                <h1 class="logo" tabindex="0">*OBINHO FLIX</h1>
+                <nav tabindex="0">
+                    <div class="container-menu">
+                        <input type="checkbox" id="checkbox-menu">
+                    
+                        <label for="checkbox-menu">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </label>
+                     
+                    </div>
+                    <ul class="mainMenu">
+                        <li><a href="#" role="home">Inicio</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Documentários</a></li>
+                    </ul>
+                    
+                </nav>
+                
+            </div>
+        </header>
+       <span id="ttest"></span>
+        <main>
+            <div class="filme-principal" id="filme-principal">
+                <div class="container">
+                    <div class="text">
+                        <h3 class="titulo"></h3>
+                        <p class="descricao"></p>
+                    </div>
+                    <div class="botoes">
+                        <a id="video" role="button" class="botao" tabindex="0" onclick="toggle(1);">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </a>
+                        <a id="info" role="button" class="botao">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÔES
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme carrosel">
+
+        </div>
+        <div class="owl-carousel owl-theme carrosel">
+
+        </div>
+    </div>
+    <div class="trailer">
+        <iframe title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="img/close.png" class='close' alt="close" onclick="toggle(0);">
+    </div>
+    
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/filme.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/jquery.mousewheel.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+
+</html>
